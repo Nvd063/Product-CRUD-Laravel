@@ -27,6 +27,7 @@
                 <td class="p-2 border">{{ $product->name }}</td>
                 <td class="p-2 border">{{ $product->price }}</td>
                 <td class="p-2 border">{{ $product->description }}</td>
+                
                 <td class="p-2 border">
                     <a href="{{ route('products.edit', $product->id) }}" class="text-blue-500">Edit</a> |
                     <form action="{{ route('products.destroy', $product->id) }}" method="POST" class="inline">

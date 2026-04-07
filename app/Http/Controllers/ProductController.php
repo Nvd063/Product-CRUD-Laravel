@@ -23,7 +23,7 @@ class ProductController extends Controller
     public function store(StoreProduct $request)
     {
         // dd($request->all());
-        // Sirf validated data use karein
+        
         Product::create($request->validated());
 
         return redirect()->route('products.index')->with('success', 'Product Added Successfully');
